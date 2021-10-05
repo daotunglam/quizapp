@@ -1,0 +1,99 @@
+body{
+    height: 100vh;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.card{
+    width: 500px;
+}
+
+.card *{
+    width: 100%;
+}
+
+
+/*
+**GAME START SITE
+*/
+
+#game_start_site #start{
+    font-weight: bold;
+}
+
+/*
+**GAME PLAYING SITE
+*/
+
+.card-img-top{
+    width: 80%;
+}
+
+.answer:hover{
+    background-color: lightgray;
+}
+
+.answer > div{
+    padding: 8px;
+    cursor: pointer;
+}
+
+#card_header{
+    height: 280px;
+    font-size: 64px;
+}
+
+@keyframes quickPump {
+    from {font-size: 62px;}
+    to {font-size: 64px;}
+}
+
+#next_btn{
+    width: fit-content;
+    padding: 16px;
+    margin-left: 30px;
+    border-left: 1px solid black;
+    border-radius: 0 4px 4px 0;
+}
+#next_btn:hover{
+    background-color: blue;
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+}
+#answers{
+    position: relative;
+}
+.coverToDisable{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+}
+
+
+/*
+**GAME END SITE
+*/
+
+#game_end_site{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#notice{
+    color: white;
+    white-space: nowrap;
+}
+#medal{
+    width: 100%;
+}
+#game_end_site #restart_game{
+    font-weight: bold;
+}
